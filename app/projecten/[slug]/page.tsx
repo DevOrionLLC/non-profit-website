@@ -10,7 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CtaSection } from "@/components/sections/cta-section";
 
 interface PageProps {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
 export async function generateStaticParams() {
@@ -20,8 +20,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const project = site.projects.find((p) => p.slug === slug);
+  const project = site.projects.find((p) => p.slug === params.slug);
 
   if (!project) {
     return {
@@ -39,9 +38,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function ProjectDetailPage({ params }: PageProps) {
-  const { slug } = await params;
-  const project = site.projects.find((p) => p.slug === slug);
+export default function ProjectDetailPage({ params }: PageProps) {
+  const project = site.projects.find((p) => p.slug === params.slug);
 
   if (!project) {
     notFound();

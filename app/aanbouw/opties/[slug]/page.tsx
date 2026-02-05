@@ -8,7 +8,7 @@ import { CtaSection } from "@/components/sections/cta-section";
 import { Button } from "@/components/ui/button";
 
 interface PageProps {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
 export async function generateStaticParams() {
@@ -18,8 +18,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const option = site.optionPages.find((o) => o.slug === slug);
+  const option = site.optionPages.find((o) => o.slug === params.slug);
   if (!option) return {};
 
   return {
@@ -32,9 +31,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function AanbouwOptieDetailPage({ params }: PageProps) {
-  const { slug } = await params;
-  const option = site.optionPages.find((o) => o.slug === slug);
+export default function AanbouwOptieDetailPage({ params }: PageProps) {
+  const option = site.optionPages.find((o) => o.slug === params.slug);
 
   if (!option) {
     notFound();

@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 interface PageProps {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
 export async function generateStaticParams() {
@@ -19,8 +19,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const area = site.workAreas.find((a) => a.slug === slug);
+  const area = site.workAreas.find((a) => a.slug === params.slug);
   if (!area) return {};
 
   return {
@@ -33,9 +32,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function WerkgebiedDetailPage({ params }: PageProps) {
-  const { slug } = await params;
-  const area = site.workAreas.find((a) => a.slug === slug);
+export default function WerkgebiedDetailPage({ params }: PageProps) {
+  const area = site.workAreas.find((a) => a.slug === params.slug);
+  const slug = params.slug; // Declare the slug variable
 
   if (!area) {
     notFound();
