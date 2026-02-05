@@ -3,7 +3,7 @@ import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Hero } from "@/components/sections/hero";
 import { ProjectGrid } from "@/components/sections/project-grid";
-import { CtaSection } from "@/components/sections/cta-section"; // Corrected import
+import { CTASection } from "@/components/sections/cta-section";
 
 export const metadata: Metadata = {
   title: site.pages.projecten.meta.title,
@@ -30,17 +30,16 @@ export default function ProjectenPage() {
       />
 
       <ProjectGrid
-        title="Bekijk onze projecten"
-        subtitle="Voor/na foto's + korte uitleg (wens, oplossing, resultaat)"
+        title="Onze projecten"
         projects={site.projects}
         showFilters={true}
-        categories={page.categories}
       />
 
-      <CtaSection
-        title="Wil je iets vergelijkbaars?"
-        subtitle="Vraag een offerte aan."
+      <CTASection
+        title="Ook meer woonruimte?"
+        subtitle="Vraag een gratis offerte aan voor jouw project."
         primaryCta={site.global.primaryCta}
+        secondaryCta={site.global.secondaryCta}
       />
     </>
   );

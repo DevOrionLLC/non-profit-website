@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { CtaSection } from "@/components/sections/cta-section";
+import { CTASection } from "@/components/sections/cta-section";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -135,7 +135,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         </div>
       </section>
 
-      <CtaSection
+      <CTASection
         title="Geïnspireerd door dit project?"
         subtitle="Laat ons weten wat jij in gedachten hebt."
         primaryCta={site.global.primaryCta}

@@ -88,12 +88,12 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Over ons</h3>
             <ul className="space-y-2 text-sm text-background/70">
               <li>
-                <Link href="/over-ons" className="hover:text-background transition-colors">
-                  Over KM Aanbouw
+                <Link href="/over-ons/het-bedrijf" className="hover:text-background transition-colors">
+                  Het bedrijf
                 </Link>
               </li>
               <li>
-                <Link href="/garanties" className="hover:text-background transition-colors">
+                <Link href="/over-ons/garanties" className="hover:text-background transition-colors">
                   Garanties
                 </Link>
               </li>
@@ -103,23 +103,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/recensies" className="hover:text-background transition-colors">
+                <Link href="/over-ons/recensies" className="hover:text-background transition-colors">
                   Recensies
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-background transition-colors">
+                <Link href="/over-ons/blog" className="hover:text-background transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-background transition-colors">
                   Contact
-                </Link>
-              </li>
-              <li>
-                <Link href="/gratis-offerte" className="hover:text-background transition-colors">
-                  Gratis offerte
                 </Link>
               </li>
             </ul>
