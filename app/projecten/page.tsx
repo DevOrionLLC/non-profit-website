@@ -30,16 +30,17 @@ export default function ProjectenPage() {
       />
 
       <ProjectGrid
-        title="Onze projecten"
+        title="Bekijk onze projecten"
+        subtitle="Voor/na foto's + korte uitleg (wens, oplossing, resultaat)"
         projects={site.projects}
         showFilters={true}
+        categories={page.categories}
       />
 
       <CTASection
-        title="Ook meer woonruimte?"
-        subtitle="Vraag een gratis offerte aan voor jouw project."
+        title="Wil je iets vergelijkbaars?"
+        subtitle="Vraag een offerte aan."
         primaryCta={site.global.primaryCta}
-        secondaryCta={site.global.secondaryCta}
       />
     </>
   );
