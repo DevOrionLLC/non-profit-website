@@ -3,7 +3,7 @@ import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Hero } from "@/components/sections/hero";
 import { ProjectGrid } from "@/components/sections/project-grid";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section"; // Corrected import
 
 export const metadata: Metadata = {
   title: site.pages.projecten.meta.title,
@@ -37,7 +37,7 @@ export default function ProjectenPage() {
         categories={page.categories}
       />
 
-      <CTASection
+      <CtaSection
         title="Wil je iets vergelijkbaars?"
         subtitle="Vraag een offerte aan."
         primaryCta={site.global.primaryCta}

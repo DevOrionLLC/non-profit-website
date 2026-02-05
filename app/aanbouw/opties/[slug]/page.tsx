@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 import { Button } from "@/components/ui/button";
 
 interface PageProps {
@@ -88,7 +88,7 @@ export default async function AanbouwOptieDetailPage({ params }: PageProps) {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title={`Offerte aanvragen voor ${option.title.toLowerCase()}`}
         subtitle="Die echt bij je woning past."
         primaryCta={site.global.primaryCta}

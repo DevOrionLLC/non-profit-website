@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Check, MapPin, ArrowRight } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -130,7 +130,7 @@ export default async function WerkgebiedDetailPage({ params }: PageProps) {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title="Vraag een gratis offerte aan"
         subtitle="Met foto's en globale maten kunnen we snel schakelen."
         primaryCta={site.global.primaryCta}

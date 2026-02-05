@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 
 export const metadata: Metadata = {
   title: site.pages.garanties.meta.title,
@@ -52,7 +52,7 @@ export default function GarantiesPage() {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title="Vraag een offerte aan"
         subtitle="Met heldere garantie-afspraken."
         primaryCta={site.global.primaryCta}

@@ -4,7 +4,7 @@ import { ArrowRight, MapPin } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Hero } from "@/components/sections/hero";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
@@ -100,7 +100,7 @@ export default function WerkgebiedenPage() {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title="Woon je ergens anders?"
         subtitle="Vraag een offerte aan — we werken landelijk en plannen efficiënt."
         primaryCta={site.global.primaryCta}

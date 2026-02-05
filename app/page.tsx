@@ -4,7 +4,7 @@ import { USPGrid } from "@/components/sections/usp-grid";
 import { ProcessSteps } from "@/components/sections/process-steps";
 import { TestimonialSlider } from "@/components/sections/testimonial-slider";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 import { FAQJsonLd } from "@/components/seo/json-ld";
 import Link from "next/link";
 import { ArrowRight, Home, Building2, Sun } from "lucide-react";
@@ -94,7 +94,7 @@ export default function HomePage() {
 
       <FAQAccordion title="Veelgestelde vragen" faqs={home.faq} />
 
-      <CTASection
+      <CtaSection
         title="Wil je weten wat in jouw woning het slimst is?"
         subtitle="Vraag een gratis offerte aan."
         primaryCta={site.global.primaryCta}

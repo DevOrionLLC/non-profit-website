@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Star, Quote } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
@@ -69,7 +69,7 @@ export default function RecensiesPage() {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title="Ook een plan?"
         subtitle="Vraag een offerte aan."
         primaryCta={site.global.primaryCta}

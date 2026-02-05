@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -67,7 +67,7 @@ export default function OpbouwPage() {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title="Gratis offerte aanvragen voor jouw dakopbouw"
         subtitle="We starten altijd met een haalbaarheidscheck."
         primaryCta={site.global.primaryCta}

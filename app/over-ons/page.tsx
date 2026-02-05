@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Hero } from "@/components/sections/hero";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 
 export const metadata: Metadata = {
   title: site.pages.overOns.meta.title,
@@ -64,7 +64,7 @@ export default function OverOnsPage() {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title="Maak kennis met KM Aanbouw"
         subtitle="Plan een adviesgesprek."
         primaryCta={{ label: "Adviesgesprek plannen", href: "/contact" }}

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
@@ -73,7 +73,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title="Klaar om te starten?"
         subtitle="Vraag een gratis offerte aan."
         primaryCta={site.global.primaryCta}

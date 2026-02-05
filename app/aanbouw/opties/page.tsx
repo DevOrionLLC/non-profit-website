@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section"; // Import CtaSection here
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
@@ -67,7 +67,7 @@ export default function AanbouwOptiesPage() {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title="Klik door naar de optie die je zoekt"
         subtitle="Of vraag direct een offerte aan."
         primaryCta={site.global.primaryCta}

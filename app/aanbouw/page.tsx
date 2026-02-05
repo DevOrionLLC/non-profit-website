@@ -4,7 +4,7 @@ import { ArrowRight, Check } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Hero } from "@/components/sections/hero";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -80,7 +80,7 @@ export default function AanbouwPage() {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title="Vraag een gratis offerte aan"
         subtitle="En ontvang een helder plan van aanpak."
         primaryCta={site.global.primaryCta}

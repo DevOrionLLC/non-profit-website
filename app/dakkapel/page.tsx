@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { CTASection } from "@/components/sections/cta-section";
+import { CtaSection } from "@/components/sections/cta-section";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -60,7 +60,7 @@ export default function DakkapelOverviewPage() {
         </div>
       </section>
 
-      <CTASection
+      <CtaSection
         title="Vraag een gratis offerte aan"
         subtitle="Meer licht en stahoogte op zolder."
         primaryCta={site.global.primaryCta}
