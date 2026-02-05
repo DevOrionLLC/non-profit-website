@@ -18,7 +18,7 @@ interface CTASectionProps {
   };
 }
 
-export function CTASection({
+export function CtaSection({
   title,
   subtitle,
   primaryCta,

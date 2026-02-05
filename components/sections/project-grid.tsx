@@ -19,8 +19,10 @@ interface Project {
 
 interface ProjectGridProps {
   title?: string;
+  subtitle?: string;
   projects: Project[];
   showFilters?: boolean;
+  categories?: string[];
 }
 
 const containerVariants = {

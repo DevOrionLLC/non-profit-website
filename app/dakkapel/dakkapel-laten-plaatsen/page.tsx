@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Check } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Check } from "lucide-react";
 import { site } from "@/src/content/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Hero } from "@/components/sections/hero";
 import { LeadForm } from "@/components/sections/lead-form";
-import { CTASection } from "@/components/sections/cta-section";
+import { TestimonialSlider } from "@/components/sections/testimonial-slider";
 import { ServiceJsonLd } from "@/components/seo/json-ld";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: site.pages.dakkapel.meta.title,
@@ -21,14 +23,11 @@ export default function DakkapelPage() {
 
   return (
     <>
-      <ServiceJsonLd
-        name="Dakkapel laten plaatsen"
-        description={page.meta.description}
-      />
+      <ServiceJsonLd name="Dakkapel laten plaatsen" description={page.meta.description} />
 
       <Breadcrumbs
         items={[
-          { label: "Dakkapel", href: "/dakkapel/dakkapel-laten-plaatsen" },
+          { label: "Dakkapel", href: "/dakkapel" },
           { label: "Dakkapel laten plaatsen" },
         ]}
       />
@@ -41,15 +40,15 @@ export default function DakkapelPage() {
         showGrid={false}
       />
 
-      {/* Content Section */}
+      {/* Keuzes */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {page.content.title}
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+              {page.keuzes.title}
             </h2>
-            <ul className="space-y-3">
-              {page.content.bullets.map((bullet, i) => (
+            <ul className="space-y-3 mb-8">
+              {page.keuzes.bullets.map((bullet, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <span className="flex-shrink-0 mt-1 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
                     <Check className="w-3 h-3 text-primary" />
@@ -58,21 +57,30 @@ export default function DakkapelPage() {
                 </li>
               ))}
             </ul>
+            <Button asChild>
+              <Link href="/gratis-offerte">
+                Vraag een gratis offerte aan
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
 
-      <CTASection
-        title="Meer licht en ruimte op zolder?"
-        subtitle="Vraag een gratis offerte aan voor je dakkapel."
-        primaryCta={site.global.primaryCta}
-        secondaryCta={site.global.secondaryCta}
+      <TestimonialSlider
+        title="Klanten over KM Aanbouw"
+        subtitle="Korte lijnen, strakke oplevering en helder communiceren."
+        testimonials={site.testimonials}
       />
 
       <LeadForm
-        title="Vraag een offerte aan"
-        subtitle="Laat je gegevens achter en we nemen binnen 1 werkdag contact op."
-        bullets={["Reactie binnen 1 werkdag", "Advies op maat", "Duidelijke prijsopgave"]}
+        title="Vraag een gratis offerte aan"
+        subtitle="Meer licht en stahoogte op zolder."
+        bullets={[
+          "Reactie binnen 1 werkdag",
+          "Advies op maat",
+          "Duidelijke prijsopgave",
+        ]}
       />
     </>
   );

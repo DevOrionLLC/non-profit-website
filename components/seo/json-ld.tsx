@@ -3,23 +3,27 @@ import { site } from "@/src/content/site";
 export function JsonLd() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "HomeAndConstructionBusiness",
     name: site.brand.name,
     description: site.brand.tagline,
     telephone: site.brand.phone,
     email: site.brand.email,
+    url: "https://kmaanbouw.nl",
     address: {
       "@type": "PostalAddress",
       streetAddress: site.brand.address,
-      addressRegion: "Zuid-Holland",
       addressCountry: "NL",
     },
-    areaServed: site.workAreas.map((area) => ({
-      "@type": "City",
-      name: area.name,
-    })),
+    areaServed: {
+      "@type": "Country",
+      name: "Nederland",
+    },
     priceRange: "€€€",
     openingHours: "Mo-Fr 08:00-17:00",
+    sameAs: [
+      "https://www.facebook.com/kmaanbouw",
+      "https://www.instagram.com/kmaanbouw",
+    ],
   };
 
   return (

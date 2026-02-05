@@ -1,5 +1,6 @@
 import React from "react"
 import type { Metadata, Viewport } from "next";
+import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
@@ -12,22 +13,25 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://kmaanbouw.nl"),
   title: {
-    default: "KM Aanbouw | Prefab & maatwerk aanbouw in Randstad & omgeving",
+    default: "KM Aanbouw | Aanbouw, Opbouw & Dakkapel in heel Nederland",
     template: "%s | KM Aanbouw",
   },
   description:
-    "KM Aanbouw realiseert prefab aanbouwen, uitbouwen, opbouwen en dakkapellen met een strakke planning en minimale overlast. Bereken kosten online en vraag gratis een offerte aan.",
+    "Meer ruimte nodig? KM Aanbouw realiseert prefab en traditionele aanbouwen, dakopbouwen en dakkapellen. Snel gebouwd, strak afgewerkt. Gratis offerte.",
   keywords: [
     "aanbouw",
     "prefab aanbouw",
     "uitbouw",
     "opbouw",
     "dakkapel",
-    "Randstad",
+    "heel Nederland",
     "Den Haag",
     "Rotterdam",
     "Leiden",
     "Delft",
+    "Amsterdam",
+    "Utrecht",
+    "Eindhoven",
   ],
   authors: [{ name: "KM Aanbouw" }],
   openGraph: {
@@ -35,9 +39,9 @@ export const metadata: Metadata = {
     locale: "nl_NL",
     url: "https://kmaanbouw.nl",
     siteName: "KM Aanbouw",
-    title: "KM Aanbouw | Prefab & maatwerk aanbouw",
+    title: "KM Aanbouw | Aanbouw, Opbouw & Dakkapel in heel Nederland",
     description:
-      "Prefab aanbouwen, uitbouwen, opbouwen en dakkapellen met minimale overlast.",
+      "Meer ruimte nodig? KM Aanbouw realiseert prefab en traditionele aanbouwen, dakopbouwen en dakkapellen. Snel gebouwd, strak afgewerkt.",
   },
 };
 
@@ -50,7 +54,7 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="nl" className={inter.variable}>
