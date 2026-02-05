@@ -43,7 +43,6 @@ export function LeadForm({
     // Simulate submission
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData);
-    console.log("[v0] Form submission:", data);
 
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
