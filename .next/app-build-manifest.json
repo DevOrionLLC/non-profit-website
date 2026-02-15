@@ -1,0 +1,132 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/app/_not-found/page-a2bc5d6b3c1efbea.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/css/71f1732951ce22ff.css",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/layout-c51c324489a79538.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/356-1ae4a496cefe0fa8.js",
+      "static/chunks/app/page-61833cbfa0f65595.js"
+    ],
+    "/fiscal-sponsorship/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/app/fiscal-sponsorship/page-4b935420f2175a50.js"
+    ],
+    "/campaign/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/campaign/page-98a0babb0f3d27ea.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/contact/page-337d5ba6fedc3cd8.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/about/page-337d5ba6fedc3cd8.js"
+    ],
+    "/fund-a-mind/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/fund-a-mind/page-4093059ef7ed37ce.js"
+    ],
+    "/governance/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/app/governance/page-4b935420f2175a50.js"
+    ],
+    "/founder/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/founder/page-337d5ba6fedc3cd8.js"
+    ],
+    "/media/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/media/page-337d5ba6fedc3cd8.js"
+    ],
+    "/founding-partners/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/founding-partners/page-337d5ba6fedc3cd8.js"
+    ],
+    "/get-involved/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/get-involved/page-337d5ba6fedc3cd8.js"
+    ],
+    "/privacy/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/app/privacy/page-4b935420f2175a50.js"
+    ],
+    "/mission/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/356-1ae4a496cefe0fa8.js",
+      "static/chunks/app/mission/page-381523e7affa26bc.js"
+    ],
+    "/pilot/page": [
+      "static/chunks/webpack-6bcf8d94efbe168f.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-0185ed54d21bfea9.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/356-1ae4a496cefe0fa8.js",
+      "static/chunks/app/pilot/page-ab3800f61348927b.js"
+    ]
+  }
+}
